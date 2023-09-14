@@ -4,7 +4,7 @@ We present a Matlab-based functional enviroment, TLPuk that simulates risk-based
 
 These files are a collection of matlab programs and scripts: scriptRISK.m creates the datastructure and then scriptPLOTRISK.m plots the output results.
 
-Note that licensed databases are missing from this work enviroment (Vs30 & population).  This will require the user to find their own datasources to adapt the approach.
+Note that licensed databases are missing from this work enviroment (Vs30 & population).  This will require the user to find their own datasources to adapt the approach.  That said, the blank Matlab datastructure (blanks/TLPuk.mat) will have this information populated for our choice of grids.
 
 References: 
             
