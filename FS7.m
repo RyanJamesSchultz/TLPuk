@@ -9,11 +9,13 @@ i=1;
 %R(i).ML=2.1; R(i).lat=53.786; R(i).lon=-2.969; R(i).dep=2.1; R(i).dGM=+0.2; R(i).year=2019; R(i).name='PNR2  M 2.1 2019-08-24'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
 %R(i).ML=1.6; R(i).lat=53.785; R(i).lon=-2.971; R(i).dep=2.1; R(i).dGM=-0.1; R(i).year=2019; R(i).name='PNR2  M 1.6 2019-08-21'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
 %R(i).ML=1.6; R(i).lat=53.787; R(i).lon=-2.965; R(i).dep=2.3; R(i).dGM=+0.1; R(i).year=2018; R(i).name='PNR1z M 1.6 2018-12-11'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
-%R(i).ML=2.3; R(i).lat=53.xxx; R(i).lon=-2.xxx; R(i).dep=2.x; R(i).dGM=-0.x; R(i).year=2011; R(i).name='PH-1  M 2.3 2011-04-01'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
-R(i).ML=3.0; R(i).lat=51.154; R(i).lon=-0.269; R(i).dep=2.3; R(i).dGM=+2.5; R(i).year=2018; R(i).name='Hhill M 3.0 2018-07-05'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
-R(i).ML=3.2; R(i).lat=51.159; R(i).lon=-0.240; R(i).dep=2.1; R(i).dGM=+1.9; R(i).year=2019; R(i).name='Hhill M 3.2 2019-02-27'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
-R(i).ML=2.7; R(i).lat=51.164; R(i).lon=-0.257; R(i).dep=3.1; R(i).dGM=+2.4; R(i).year=2018; R(i).name='Hhill M 2.7 2018-04-01'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
-R(i).ML=2.5; R(i).lat=51.168; R(i).lon=-0.239; R(i).dep=2.4; R(i).dGM=+2.1; R(i).year=2019; R(i).name='Hhill M 2.5 2018-06-18'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
+R(i).ML=2.3; R(i).lat=53.818; R(i).lon=-2.950; R(i).dep=2.3; R(i).dGM=+2.1; R(i).year=2011; R(i).name='PH-1  M 2.3 2011-04-01'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
+R(i).ML=1.4; R(i).lat=53.818; R(i).lon=-2.950; R(i).dep=2.3; R(i).dGM=+1.9; R(i).year=2011; R(i).name='PH-1  M 1.4 2011-05-27'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
+R(i).ML=1.2; R(i).lat=53.818; R(i).lon=-2.950; R(i).dep=2.3; R(i).dGM=+1.8; R(i).year=2011; R(i).name='PH-1  M 1.2 2011-05-26'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
+%R(i).ML=3.0; R(i).lat=51.154; R(i).lon=-0.269; R(i).dep=2.3; R(i).dGM=+2.5; R(i).year=2018; R(i).name='Hhill M 3.0 2018-07-05'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
+%R(i).ML=3.2; R(i).lat=51.159; R(i).lon=-0.240; R(i).dep=2.1; R(i).dGM=+1.9; R(i).year=2019; R(i).name='Hhill M 3.2 2019-02-27'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
+%R(i).ML=2.7; R(i).lat=51.164; R(i).lon=-0.257; R(i).dep=3.1; R(i).dGM=+2.4; R(i).year=2018; R(i).name='Hhill M 2.7 2018-04-01'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
+%R(i).ML=2.5; R(i).lat=51.168; R(i).lon=-0.239; R(i).dep=2.4; R(i).dGM=+2.1; R(i).year=2019; R(i).name='Hhill M 2.5 2018-06-18'; R(i).Mw=ML2Mw(R(i).ML); i=i+1;
 
 % Predefine some values.
 Yls=2018;
@@ -66,7 +68,7 @@ h.Annotation.LegendInformation.IconDisplayStyle = 'off';
 h=plot(log10(n2tx)*[1 1],ylim,':k');
 h.Annotation.LegendInformation.IconDisplayStyle = 'off';
 xlabel('log_{10} Nuisance Impacts (CDI 2)'); ylabel('Counts');
-xlim([3 7]);
+xlim([1 6]);
 legend();
 % CDI 3.
 subplot(142);
@@ -78,7 +80,7 @@ h.Annotation.LegendInformation.IconDisplayStyle = 'off';
 h=plot(log10(n3tx)*[1 1],ylim,':k');
 h.Annotation.LegendInformation.IconDisplayStyle = 'off';
 xlabel('log_{10} Nuisance Impacts (CDI 3)'); ylabel('Counts');
-xlim([3 7]);
+xlim([1 6]);
 legend();
 % CDI 4.
 subplot(143);
@@ -90,7 +92,7 @@ h.Annotation.LegendInformation.IconDisplayStyle = 'off';
 h=plot(log10(n4tx)*[1 1],ylim,':k');
 h.Annotation.LegendInformation.IconDisplayStyle = 'off';
 xlabel('log_{10} Nuisance Impacts (CDI 4)'); ylabel('Counts');
-xlim([3 7]);
+xlim([1 6]);
 legend();
 % DS 1.
 subplot(144);
@@ -102,7 +104,7 @@ h.Annotation.LegendInformation.IconDisplayStyle = 'off';
 h=plot(log10(d1tx)*[1 1],ylim,':k');
 h.Annotation.LegendInformation.IconDisplayStyle = 'off';
 xlabel('log_{10} Damage Impacts (DS 1)'); ylabel('Counts');
-xlim([-2 4]);
+xlim([-3 3]);
 legend();
 
 % % DS 2.
