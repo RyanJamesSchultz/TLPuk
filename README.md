@@ -10,8 +10,8 @@ References:
             
             R. Schultz, B. Baptie, B. Edwards, & S. Wiemer. (2023)
             Red-light thresholds for induced seismicity in the UK
-            Seismica, xx, XX.
-            doi: xxx.
+            Seismica, 2.2, 1-16.
+            doi: 10.26443/seismica.v2i2.1086.
             
             R. Schultz, G.C. Beroza, & W.L. Ellsworth. (2021)
             A risk-based approach for managing hydraulic fracturing-induced seismicity
